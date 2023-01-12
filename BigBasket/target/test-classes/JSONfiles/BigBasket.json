@@ -1,0 +1,27 @@
+
+
+{ 
+"bigbasket_url":"https://www.bigbasket.com/",
+"bigbasket_logo":"//a[@class='bb-logo change-logo hidden-xs hidden-sm']",
+"product_1":"cauliflower",
+"search_box_locator":"//input[@id='input']",
+"search_tab_locator":"//i[@class='icon svg-header svg-search svg-search-dim hidden-sm hidden-xs']",
+"cauliflower_locator":"//a[contains(text(),'Cut Cauliflower, Washed')]",
+"cauliflower_title":"Fresho Cut Cauliflower, Washed, 300 g",
+"cauliflower_title_locator":"//h1[contains(text(),'Fresho Cut Cauliflower, Washed, 300 g')]",
+"cauliflower_quantity":"2",
+"cauliflower_quantity_locator":"//input[@aria-label='basketQtyInput']",
+"addToBucket":"//div[@class='Cs6YO rippleEffect']",
+"added_successfully":"Successfully added Cut Cauliflower, Washed to the basket",
+"added_successfully_locator":"//div[@id='toast']",
+"shop_by_category" : "//a[@class='dropdown-toggle meganav-shop']",
+"beverages_locator" : "//*[@id='navBarMegaNav']/li[4]/a",
+"diet_coke_soft_drink" :"//body/div[1]/div[3]/product-deck[1]/section[1]/div[2]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/div[8]/product-template[1]/div[1]/div[3]/a[1]/img[1]",
+"coke_quantity" : "3",
+"coke_quantity_locator" : "//input[@name='qty']",
+"coke_addToBucket" : "//span[normalize-space()='ADD TO BASKET']",
+"My_Basket":"//div[@class='eubx4']",
+"view_basket_and_checkout":"//a[contains(text(),'View Basket & Checkout')]"
+
+
+}
