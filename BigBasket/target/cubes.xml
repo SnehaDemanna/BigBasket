@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="40.432">
+    <testcase classname="to test the product search and add to cart functionality of bigbasket" name="to navigate to bigbasket page" time="25.889">
+        <system-out>
+            <![CDATA[Given browser is launched...................................................passed
+And user navigates to "bigbasket_url" page..................................passed
+Then assert "bigbasket_logo"................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="to test the product search and add to cart functionality of bigbasket" name="to add a product in a cart" time="9.391">
+        <failure message="expected [Successfully added Cauliflower, Washed to the basket] but found [Successfully added Cut Cauliflower, Washed to the basket]" type="java.lang.AssertionError">
+            <![CDATA[And Type product "product_1" in "search_box_locator"........................passed
+And Click on the "search_tab_locator" element...............................passed
+And Click on "cauliflower_locator" with desired product.....................passed
+And assert the "cauliflower_title" in "cauliflower_title_locator"...........passed
+And change the quantity to "cauliflower_quantity" in "cauliflower_quantity_locator".passed
+And Click on "addToBucket"..................................................passed
+And assert the text "added_successfully" in "added_successfully_locator"....failed
+
+StackTrace:
+java.lang.AssertionError: expected [Successfully added Cauliflower, Washed to the basket] but found [Successfully added Cut Cauliflower, Washed to the basket]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at bigbasket.actionDriver.assert_text1(actionDriver.java:51)
+	at bigbasket.stepDefination.assert_the_text_in(stepDefination.java:118)
+	at ✽.assert the text "added_successfully" in "added_successfully_locator"(file:///C:/Users/sneha_demanna/eclipse-workspace/BigBasket/src/test/resources/featureFiles/BigBasket.feature:17)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="to test the product search and add to cart functionality of bigbasket" name="to view basket and checkout" time="4.798">
+        <system-out>
+            <![CDATA[And Click on My Basket "My_Basket"..........................................passed
+Then Click view basket and checkout "view_basket_and_checkout"..............passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
